@@ -46,3 +46,18 @@ label {
     font-weight: 600;
     padding: 5px;
 }
+button {
+    margin: 20px;
+    width: 160px;
+    height: 55px;
+    background-color: #181818;
+    color: rgba(255, 242, 0, 0.78);
+    border-width: 1px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: x-large;
+}
+button:hover {
+    transition: background-color 300ms;
+    background-color: rgba(24, 24, 24, 0.5);
+}

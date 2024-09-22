@@ -32,14 +32,14 @@ const ClientInit = () => {
         <div className="container">
             <div className="subContainer">
                 <span className="item">
-                    <label htmlFor="ClientInit.Server">Server</label>
+                    <label htmlFor="ClientInit.Server">Server: </label>
                     <input id="ClientInit.Server"
                            value={server}
                            onChange={changeServer}
                     ></input>
                 </span>
                 <span className="item">
-                    <label htmlFor="ClientInit.Port">Port</label>
+                    <label htmlFor="ClientInit.Port">Port: </label>
                     <input id="ClientInit.Port"
                            value={port}
                            onChange={changePort}
@@ -47,7 +47,7 @@ const ClientInit = () => {
                 </span>
 
                 <span className="item">
-                    <label htmlFor="ClientInit.Timeout">Timeout</label>
+                    <label htmlFor="ClientInit.Timeout">Timeout: </label>
                     <input id="ClientInit.Timeout"
                            value={timeout}
                            onChange={changeTimeout}
@@ -55,7 +55,7 @@ const ClientInit = () => {
                 </span>
 
                 <span className="item">
-                    <label htmlFor="ClientInit.BufferSize">Buffer Size</label>
+                    <label htmlFor="ClientInit.BufferSize">Buffer Size: </label>
                     <input id="ClientInit.BufferSize"
                            value={bufferSize}
                            onChange={changeBufferSize}
@@ -63,7 +63,7 @@ const ClientInit = () => {
                 </span>
 
                 <span className="item">
-                    <label htmlFor="ClientInit.EOF">EOF</label>
+                    <label htmlFor="ClientInit.EOF">EOF: </label>
                     <input id="ClientInit.EOF"
                            value={eof}
                            onChange={changeEof}
@@ -71,7 +71,7 @@ const ClientInit = () => {
                 </span>
 
                 <span className="item">
-                    <label htmlFor="ClientInit.DBEngine">DB Engine</label>
+                    <label htmlFor="ClientInit.DBEngine">DB Engine: </label>
                     <select id="ClientInit.DBEngine"
                             value={dbEngine}
                             onChange={changeDbEngine}>
