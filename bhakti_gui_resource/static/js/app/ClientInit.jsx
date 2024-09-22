@@ -6,7 +6,7 @@ const ClientInit = () => {
     const [timeout, setTimeout] = useState(4.0)
     const [bufferSize, setBufferSize] = useState(256)
     const [eof, setEof] = useState('<eof>')
-    const [dbEngine, setDbEngine] = useState('dipamkara');
+    const [engine, setEngine] = useState('dipamkara');
     const changeServer = (event) => {
         setServer(event.target.value)
     }
@@ -22,11 +22,14 @@ const ClientInit = () => {
     const changeEof = (event) => {
         setEof(event.target.value)
     }
-    const changeDbEngine = (event) => {
-        setDbEngine(event.target.value)
+    const changeEngine = (event) => {
+        setEngine(event.target.value)
     }
     const connect = () => {
-        window.location.assign("index.html")
+        axios.get('index.html').then((resp) => {
+            alert(resp)
+        })
+        // window.location.assign("index.html")
     }
     return (
         <div className="container">
@@ -73,8 +76,8 @@ const ClientInit = () => {
                 <span className="item">
                     <label htmlFor="ClientInit.DBEngine">DB Engine: </label>
                     <select id="ClientInit.DBEngine"
-                            value={dbEngine}
-                            onChange={changeDbEngine}>
+                            value={engine}
+                            onChange={changeEngine}>
                         <option value="dipamkara">Dipamkara</option>
                     </select>
                 </span>
